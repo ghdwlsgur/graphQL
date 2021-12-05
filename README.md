@@ -1,4 +1,4 @@
-# graphQL TEST
+## graphQL TEST
 
 
 ```javascript
@@ -134,6 +134,44 @@ server.listen().then(({url}) => {
   console.log(`Server ready at ${url}`);
 });
 ```
+
+### graphQL TEST
+
+```javascript
+
+// 파라미터로 전달받은 이름이 movies 배열 안 객체 name의 value값과 같다면 null을 반환하고 (배열 안 객체에 이미 존재하는 데이터) 
+// 그렇지 않다면 파라미터로 전달받은 name과 string의 값을 담고 있는 newMovie 객체를 만들어 movies 배열에 push한다.
+
+mutation {
+  addMovie(name: "해리포터", rating: 8) {
+    name
+  }
+}
+
+// id가 2인 영화의 id, name, rating 필드를 조회
+// 리졸버 폴더에서 Query 함수를 보면 movie.id가 2인 movie의 필드를 반환한다.
+query {
+  movie(id: 2) {
+    id
+    name
+    rating
+  }
+}
+
+// 전체 조회
+// 리졸버 폴더에서 Query 함수를 보면 movies를 반환한다.
+// movies는 각각의 movie정보들을 담고있는 배열이다.
+query {
+  movies {
+    id
+    name
+    rating
+  }
+}
+```
+
+
+
 
 
 
