@@ -20,10 +20,10 @@ yarn add @babel/core @babel/node @babel/preset-env nodemon --dev
 
 ```javascript
 cd apollo
-mkdir src                 apollo/src 생성
-cd src                    apollo/src 이동
-mkdir database            database 생성
-mkdir graphql             graphql 생성
+mkdir src                                     // apollo/src 생성
+cd src                                        // apollo/src 이동
+mkdir database                                // database 생성
+mkdir graphql                                 // graphql 생성
 
 파일 생성 index.js
 ```
