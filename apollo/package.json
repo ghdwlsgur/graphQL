@@ -1,0 +1,25 @@
+{
+  "name": "apollo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "hongjinhyeok",
+  "description": "practice graphQL",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "graphql": "^16.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0"
+  }
+}
